@@ -1,0 +1,104 @@
+/* General Setup */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a0f0f, #000000);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Screen Management: Hide screens by default */
+.screen {
+  display: none;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Show the active screen */
+.active-screen {
+  display: block;
+}
+
+/* Envelope Box Styling */
+.envelope-box {
+  background: #4a0e17;
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Main Content Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gold-text {
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+
+/* Form Setup */
+.form-group {
+  margin: 20px 0;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #d4af37;
+  background: #222;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Beautiful Ticket Styling */
+.ticket {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: 3px dashed #4a0e17;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.ticket-header {
+  background: #4a0e17;
+  color: #d4af37;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.ticket-body {
+  padding: 30px;
+  background: #fff8f8;
+}
+
+/* Button Magic */
+button {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #f1c40f;
+  transform: scale(1.02);
+}
