@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scarlet Gala Invitation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SCREEN 1: THE ENVELOPE / OPEN ME -->
+  <div id="envelope-screen" class="screen active-screen">
+    <div class="envelope-box">
+      <h2>✉️ You Have an Invitation!</h2>
+      <button id="open-btn">Open Invitation</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: THE DETAILS & RSVP -->
+  <div id="details-screen" class="screen">
+    <div class="card">
+      <h1 class="gold-text">🏆 SCARLET GALA</h1>
+      <p class="subtitle">Student Ambassador Appreciation Event</p>
+      
+      <div class="event-details">
+        <p><strong>📅 Date:</strong> Friday, 13 November 2026</p>
+        <p><strong>⏰ Time:</strong> 18:30 – 22:00</p>
+        <p><strong>📍 Venue:</strong> Vine Ballroom, Singapore</p>
+      </div>
+
+      <hr>
+
+      <h3>RSVP Form</h3>
+      <div class="form-group">
+        <label for="guest-name">Your Full Name:</label>
+        <input type="text" id="guest-name" placeholder="Enter your name">
+      </div>
+      <button id="submit-btn">Accept Invitation & Get Ticket</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: THE GENERATED TICKET -->
+  <div id="ticket-screen" class="screen">
+    <div class="ticket">
+      <div class="ticket-header">EVENT TICKET</div>
+      <div class="ticket-body">
+        <h2 id="ticket-holder-name">Guest Name</h2>
+        <p>⭐ Admit One ⭐</p>
+        <p><strong>Gala Entry Code:</strong> <span id="ticket-number">#0000</span></p>
+      </div>
+      <div class="ticket-footer">Please show this at registration</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
